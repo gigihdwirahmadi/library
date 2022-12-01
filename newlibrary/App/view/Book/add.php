@@ -30,6 +30,6 @@
   <label for="exampleFormControlInput1" class="form-label">Language</label>
   <input type="text" name="language" class="form-control" id="exampleFormControlInput1" placeholder="Language">
 </div>
-<input type="submit" value="Submit">
+<input type="submit" value="SUBMIT" class="btn btn-success">
 
     </form>

@@ -22,6 +22,6 @@
   <label for="exampleFormControlInput1" class="form-label">Avatar</label>
   <input type="text" name="avatar" class="form-control" id="exampleFormControlInput1" value="<?= $data->avatar ?>" placeholder="name@example.com">
 </div>
-<input type="submit" value="SUBMIT">
+<input type="submit" value="SUBMIT" class="btn btn-success">
 
     </form>

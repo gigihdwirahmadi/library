@@ -18,6 +18,6 @@
   <label for="exampleFormControlInput1" class="form-label">is_active</label>
   <input type="text" name="is_active" class="form-control" id="exampleFormControlInput1" value="<?= $data->is_active ?>" placeholder="name@example.com">
 </div>
-<input type="submit" value="SUBMIT">
+<input type="submit" value="SUBMIT" class="btn btn-success">
 
     </form>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 01, 2022 at 11:03 AM
+-- Generation Time: Dec 01, 2022 at 05:42 PM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 7.4.30
 
@@ -45,7 +45,11 @@ CREATE TABLE `book` (
 --
 
 INSERT INTO `book` (`id`, `isbn`, `title`, `synopsis`, `author`, `publisher`, `category`, `language`, `created_at`, `updated_at`) VALUES
-(2, 433, 'yhg', 'ytut', 'uty', 'ut', 'tyu', 'tuy', '2022-12-01 07:17:55', NULL);
+(3, 44543, 'Perjuangan', '-', 'Ratna Santika', 'Erlangga', 'Novel', 'Indonesia', '2022-12-01 16:26:44', NULL),
+(5, 66745, 'Agriculture', '-', 'Robert Thyphon', 'Rexo', 'Nonfiction', 'English', '2022-12-01 16:28:42', NULL),
+(7, 45678, 'Time Relativity', '-', 'Albert Enstein', 'Zero', 'Nonfiction', 'English', '2022-12-01 16:32:45', NULL),
+(9, 23432, 'Megalodon', '-', 'Rendy Aksara', 'Toramoza', 'Novel', 'Indonesia', '2022-12-01 16:35:06', NULL),
+(11, 12321, 'Fluida', '-', 'William Birze', 'Retroline', 'Nonfiction', 'English', '2022-12-01 16:37:20', NULL);
 
 -- --------------------------------------------------------
 
@@ -69,7 +73,8 @@ CREATE TABLE `librarian` (
 --
 
 INSERT INTO `librarian` (`id`, `username`, `name`, `password`, `avatar`, `created_at`, `updated_at`, `email`) VALUES
-(1, 'gigih', 'gigih', '123', '123', '2022-12-01 04:20:07', NULL, 'gigih@gmail.com');
+(1, 'gigih', 'gigih', '123', '123', '2022-12-01 04:20:07', NULL, 'gigih@gmail.com'),
+(5, 'user1', 'user1', '$2y$10$84jaLM/hhIzxQxyICUNcTOVjPoZyhgfmnQt4OZGrQCc', '1234', '2022-12-01 16:40:32', NULL, 'user1@librarian.com');
 
 -- --------------------------------------------------------
 
@@ -134,8 +139,8 @@ CREATE TABLE `subscription` (
 --
 
 INSERT INTO `subscription` (`id`, `title`, `month`, `price`, `is_active`, `created_at`, `updated_at`) VALUES
-(1, '2', 4, 2, 1, '2022-12-01 09:17:00', NULL),
-(2, '1', 1, 1, 1, '2022-12-01 09:59:09', NULL);
+(3, '1', 4, 30000, 1, '2022-12-01 16:38:23', NULL),
+(4, '1', 1, 10000, 0, '2022-12-01 16:41:07', NULL);
 
 --
 -- Indexes for dumped tables
@@ -173,13 +178,13 @@ ALTER TABLE `subscription`
 -- AUTO_INCREMENT for table `book`
 --
 ALTER TABLE `book`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `librarian`
 --
 ALTER TABLE `librarian`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `member`
@@ -191,7 +196,7 @@ ALTER TABLE `member`
 -- AUTO_INCREMENT for table `subscription`
 --
 ALTER TABLE `subscription`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

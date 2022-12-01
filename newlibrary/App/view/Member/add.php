@@ -50,6 +50,6 @@
   <option value="0">Inactive</option>
 </select>
 </div>
-<input type="submit" value="Submit">
+<input type="submit" value="SUBMIT" class="btn btn-success">
 
     </form>

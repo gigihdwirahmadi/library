@@ -22,6 +22,6 @@
   <option value="1" >Active</option>
   <option value="0">Inactive</option>
 </select></div>
-<input type="submit" value="SUBMIT">
+<input type="submit" value="SUBMIT" class="btn btn-success">
 
     </form>

@@ -42,6 +42,6 @@
   <option value="0" <?=$data["subscription"]->is_active==0 ? 'selected':''?>>Inactive</option>
 </select>
 </div>
-<input type="submit" value="Submit">
+<input type="submit" value="SUBMIT" class="btn btn-success">
 
     </form>
