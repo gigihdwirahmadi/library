@@ -12,6 +12,7 @@ require_once __DIR__. '/../vendor/autoload.php';
 session_start();
 Router::addRoute('GET','/', HomeController::class, 'index',[] );
 Router::addRoute('GET','/login', HomeController::class, 'login',[] );
+Router::addRoute('POST','/postlogin', HomeController::class, 'postlogin',[] );
 //book
 Router::addRoute('GET','/Bookindex', BookController::class, 'index',[] );
 Router::addRoute('GET','/addbook', BookController::class, 'add',[] );

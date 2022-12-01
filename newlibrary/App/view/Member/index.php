@@ -1,6 +1,6 @@
 <div class="container">
 <a href="<?= newlibrary\app\core\Router::Url("/public/addmember") ?>" class="btn btn-success">tambah</a>
-    <table class="table">
+    <table class="table table-secondary">
         <tr>
   
             <th>No</th>

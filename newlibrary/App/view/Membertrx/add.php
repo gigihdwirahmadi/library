@@ -1,5 +1,5 @@
 <div class="container">
-<div class="card p-4">
+<div class="card p-4 bg=secondary">
     <form action="<?= newlibrary\app\core\Router::Url("/public/postaddlibrarian") ?>" method="POST">
     <input type="hidden" name="id" value="<?= $data->id ?>">
 <div class="mb-3">

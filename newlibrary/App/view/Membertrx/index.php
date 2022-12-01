@@ -18,7 +18,7 @@
                 <td><?= $row->name ?></td>
                 <td> <?= $row->email ?></td>
                 <td><?= $row->created_at ?></td>
-                <td><a href="<?= newlibrary\app\core\Router::Url("/public/updatelibrarian/$row->id") ?>" class="btn btn-success">update</a><form action="<?= newlibrary\app\core\Router::Url("/public/deletelibrarian") ?>" method="post">
+                <td style="display:grid;align-item: right;"><a href="<?= newlibrary\app\core\Router::Url("/public/updatelibrarian/$row->id") ?>" class="btn btn-success">update</a><form action="<?= newlibrary\app\core\Router::Url("/public/deletelibrarian") ?>" method="post">
                 <input type="hidden" name="id"value="<?= $row->id ?>"><input type="submit" class="btn btn-dark"  value="delete">
               </form></td>
             </tr>
